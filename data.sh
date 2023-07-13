@@ -5,6 +5,7 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinu
 sudo yum -y install terraform
 sudo git clone https://saiyerra831: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@github.com/saiyerra831/tf-abalone.git
 cd tf-abalone
+sudo terraform init -upgrade
 sudo terraform validate
 sudo terraform plan
-sudo terraform apply --auto-approve
+sudo terraform apply --auto-approve -lock=flase
