@@ -8,4 +8,4 @@ cd tf-abalone
 sudo terraform init -upgrade
 sudo terraform validate
 sudo terraform plan
-sudo terraform apply --auto-approve -lock=flase
+sudo terraform apply --auto-approve -lock=false
